@@ -17,5 +17,30 @@ npm i express --save
 
 npm i cors --save
 
-5- 
+5- nosso index.js para teste<br>
+const express = require('express')
+const cors = require('cors')
+const app = express()
+
+const PORT = process.env.PORT || 3000
+
+//app.use(cors())
+
+
+app.get('/users', (req, res) => {
+
+    res.json([
+        {
+            name:'Diogo'
+        },
+        {
+            name:'Paza'
+        }
+    ])
+})
+
+
+app.listen(PORT, () =>{
+    console.log(`Server listening on port ${PORT}`)
+})
 
