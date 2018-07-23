@@ -64,3 +64,22 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource.
 
 Ou seja precisamos configurar nossa aplicação para que ela tenha acesso http a outros dominios
 
+6- Após isso descomente onde estamos configurando nosso middleware cors 
+E com o código abaixo teremos o retorno de nosso objetos
+
+fetch('http://localhost:3000/users')
+ .then(response => response.json())
+  .then(data => console.log(data))
+
+7- Com isso temos o metodo get acessando outros dominios, para usar outros metodos
+  é preciso mais alguns ajustes
+
+  maiores informações
+
+  https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS
+
+  
+
+
+
+
