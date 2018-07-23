@@ -1,0 +1,24 @@
+{
+  "name": "nodeCORS",
+  "version": "1.0.0",
+  "description": "<h2>CORS(Cross-Origin Resource Sharing) ou Controle de acesso HTTP</h2>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogopaza/Cors_NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogopaza/Cors_NodeJS/issues"
+  },
+  "homepage": "https://github.com/diogopaza/Cors_NodeJS#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}
