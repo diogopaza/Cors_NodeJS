@@ -18,8 +18,8 @@ npm i express --save
 npm i cors --save
 
 5- nosso index.js para teste<br>
-const express = require('express')
-const cors = require('cors')
+const express = require('express')<br>
+const cors = require('cors')<br>
 const app = express()
 
 const PORT = process.env.PORT || 3000
@@ -40,7 +40,27 @@ app.get('/users', (req, res) => {
 })
 
 
-app.listen(PORT, () =>{
+app.listen(PORT, () =>{<br>
     console.log(`Server listening on port ${PORT}`)
 })
+
+**Note que nosso app.use(cors()) está comentado, deixei assim para iniciarmos os 
+
+testes
+
+https://jsbin.com/ esse site é fácil para testar nossos códigos
+
+Na opção de javascript vamos testar esse código om nosso servidor
+rodando atraves do comando node index.js
+
+fetch('http://localhost:3000/users')
+  .then(r => console.log(r))
+
+ao mandarmos executar esse ccódigo irá aparecer um erro, podemos
+com o botão direito encima da janela do javascirpt e clicar em inspecionar, 
+logo após vamos no console do nosso navegador e irá aparecer o erro:
+
+No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+Ou seja precisamos configurar nossa aplicação para que ela tenha acesso http a outros dominios
 
